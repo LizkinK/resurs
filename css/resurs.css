@@ -12,7 +12,7 @@ a {
 	text-decoration: none;
 }
 
-/*шрифт*/
+/*font*/
 @font-face {
   font-family: "MullerBold";
   font-style: normal;
@@ -31,7 +31,7 @@ a {
   font-weight: normal;
   src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype"), url("../fonts/MullerRegular/MullerRegular.svg#MullerRegular") format("svg"); }
 
-/*шапка*/
+/*header*/
 .head__wrapper {
 	width: 100%;
 	background-image: url('../img/index/1.png');
@@ -80,7 +80,7 @@ a {
 .header__phone a{
 	color: #000;
 }
-/*меню для моб версии*/
+/*mobile menu*/
 .header_mobile_menu, .header_mobile_visible_menu, .header_mobile_hidden_menu {
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -134,8 +134,8 @@ a {
 .header_mobile_toggle_menu_new a {
 	font: 18px/30px "MullerMedium";
 	color: black;
-	-webkit-transition: color 0.5s ease-out 0.1s;
-	transition: color 0.5s ease-out 0.1s;
+	-webkit-transition: color 0.2s ease-out 0.1s;
+	transition: color 0.2s ease-out 0.1s;
 }
 .header_mobile_toggle_menu_new a:hover {
 	color: #ffc500;
@@ -224,8 +224,8 @@ a {
 	margin-top: 5px;
     -webkit-transform: rotate(40deg);
             transform: rotate(40deg);
-    -webkit-transition: 0.5s ease-out 0.1s;
-    transition: 0.5s ease-out 0.1s;
+    -webkit-transition: .2s ease-out 0.1s;
+    transition: .2s ease-out 0.1s;
 }
 .fixed_menu span:nth-child(2) {
 	display: none;
@@ -235,12 +235,12 @@ a {
 	margin-top: 5px;
     -webkit-transform: rotate(-40deg);
             transform: rotate(-40deg);
-    -webkit-transition: 0.5s ease-out 0.1s;
-    transition: 0.5s ease-out 0.1s;
+    -webkit-transition: .2s ease-out 0.1s;
+    transition: .2s ease-out 0.1s;
 }
 .header_mobile_visible_menu span {
-	-webkit-transition: 0.5s ease-out 0.1s;
-	transition: 0.5s ease-out 0.1s;
+	-webkit-transition: .2s ease-out 0.1s;
+	transition: .2s ease-out 0.1s;
 	z-index: 8888;
 }
 .header_mobile_toggle_menu_new {
@@ -484,8 +484,7 @@ a {
 	position: relative;
 }
 	
-/*основное*/
-/*навигация*/
+/*nav*/
 .bread-crumbs {
 	margin-left: 15px;
 	margin-top: 35px;
@@ -510,7 +509,7 @@ a {
 .bread-crumbs .active a {
 	color: #8c8c8c;
 }
-/*по блокам*/
+/*service*/
 .service, .index__payment, .index__service, .index__work, .index__articles, .contact__items {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -572,8 +571,8 @@ a {
     height: calc(100% + 8px); 
     -webkit-transform: scaleX(0); 
             transform: scaleX(0);
-    -webkit-transition: .5s ease;
-        transition: .5s ease;
+    -webkit-transition: .2s ease;
+        transition: .2s ease;
 } 
 .catalog__range__color__item:hover:before {
     -webkit-transform: scaleX(1);
@@ -918,6 +917,7 @@ a {
 .territory__wrapper, .detail__wraper, .article__wraper, .detail-work__wrapper {
 	margin: 35px 15px;
 }
+/*about*/
 .about-company__text {
 	margin-top: 35px;
 	line-height: 20px;
@@ -967,7 +967,7 @@ a {
 .about__power__topic {
 	font: 24px/26px "MullerMedium";
 }
-
+/*contact*/
 .contact__item__text__topic {
 	font: 27px/34px "MullerBold";
 }
@@ -1002,11 +1002,12 @@ a {
 #map {
       width: 100%; 
       height: 100%;
-     }
+}
 #maps {
    	 width: 100%; 
    	 height: 100%;
-   }
+}
+/*detail*/
 .detail__text h1 {
 	font: 30px/32px "MullerBold";
 }
@@ -1060,6 +1061,7 @@ a {
 .detail__article:last-child{
 	margin-top: 50px;
 }
+/*article*/
 .article__topic {
 	font: 36px/36px "MullerBold";
 	margin-top: 20px;
@@ -1650,7 +1652,7 @@ a {
 	font-size: 16px;
 	font-family: "MullerMedium";
 	color: #fff;
-	max-width: 135px;
+	max-width: 137px;
 }
 .detail-work__article__item:first-child a {
 	position: absolute;
@@ -1709,7 +1711,7 @@ a {
 }
 	
 @media only screen and (min-width: 1024px) {
-/*шапка*/
+/*header*/
 	.bread-crumbs {
 		margin-left: 25px;
 	}
@@ -2485,7 +2487,6 @@ a {
 	padding-bottom: 45px;
 }
 
-/*подвал*/
 footer {
 	display: flex;
 	flex-direction: column;
@@ -2493,7 +2494,6 @@ footer {
 	max-height: 1200px;
 	justify-content: center;
 }
-/*списки*/
 .footer_container {
 	display: flex;
 	flex-wrap: wrap;
@@ -2503,7 +2503,6 @@ footer {
 	width: 80%;
 	margin: 0 auto; 
 }
-/*каждый список отдельно*/
 .footer_item {
 	padding-top: 45px;
 	width: 239px;
@@ -2633,6 +2632,7 @@ footer {
 		-ms-grid-columns: 34.5% 5px 31% 5px 34.5%;
 		    grid-template-columns: 34.5% 31% 34.5%;
 		grid-column-gap: 5px;
+		grid-row-gap: 10px;
 	}
 	.detail__work, .detail__home, .detail__garden, .detail__road, .detail__text { 
 		margin-top: 0px;
@@ -3103,38 +3103,20 @@ footer {
 		font-family: "MullerBold";
 		margin: 0;
 	}
-	.detail-work__article__items-container {
-		display: -ms-grid;
-		display: grid;
-		-ms-grid-rows: 50% 50%;
-		    grid-template-rows: 50% 50%;
-		-ms-grid-columns: 69% 31%;
-		    grid-template-columns: 69% 31%;
-		grid-column-gap: 4px;
-	}
-	.detail-work__article__item img {
-		width: 100%;
-	}
-	.detail-work__article__item:nth-child(1) {
-		-ms-grid-row: 1;
-		    grid-row-start: 1;
-		grid-row-end: 3;
-		 -ms-grid-row-span: 3;
-		 -ms-grid-column: 1;
-	}
-	.detail-work__article__item:nth-child(2){
-		-ms-grid-row: 1;
-		-ms-grid-column: 2;
-	}
-	.detail-work__article__item:nth-child(3){
-		-ms-grid-row: 2;
-		-ms-grid-column: 2;
-	}
 	.detail-work__goods__price-item span, .detail-work__goods__price-item sup {
 		font-size: 26px;
 	}
 	.detail-work__goods__item:first-child {
 		margin-bottom: 50px;
+	}
+	.detail-work__article__item:not(:first-child) a {
+		position: absolute;
+		bottom: 25px;
+		left: 30px;
+		font-size: 30px;
+		font-family: "MullerMedium";
+		color: #fff;
+		max-width: 210px;
 	}
 	.about__power__items {
 		display: -webkit-box;
@@ -3165,8 +3147,6 @@ footer {
 	display: inline-grid;
 	-ms-grid-columns: 67% 4px 33%;
 	    grid-template-columns: 67% 33%;
-	-ms-grid-rows: 50% 50%;
-	    grid-template-rows: 50% 50%;
 	grid-column-gap: 4px;
 }
 .index__work__item:first-child {
